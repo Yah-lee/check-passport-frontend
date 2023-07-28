@@ -17,18 +17,17 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   publicRuntimeConfig: {
-    apiUrl: "http://localhost:4000"
+    apiUrl: 'http://localhost:4000',
   },
   axios: {
-    baseURL: "http://localhost:4000"
+    baseURL: 'http://localhost:4000',
   },
-
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['~/plugins/json-excel.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -37,27 +36,25 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    '@nuxtjs/moment',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    '@nuxtjs/axios','@nuxtjs/toast','cookie-universal-nuxt',
-    
-  ],
+  modules: ['@nuxtjs/axios', '@nuxtjs/toast', 'cookie-universal-nuxt'],
   toast: {
     position: 'top-right',
-    duration:3000,
-    register: [ // Register custom toasts
+    duration: 3000,
+    register: [
+      // Register custom toasts
       {
         name: 'my-error',
         message: 'Oops...Something went wrong',
         options: {
-          type: 'error'
-        }
-      }
-    ]
-},
-  
+          type: 'error',
+        },
+      },
+    ],
+  },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
@@ -79,9 +76,8 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  },
+  build: {},
   server: {
-    host: '0.0.0.0'
-  }
+    host: '0.0.0.0',
+  },
 }

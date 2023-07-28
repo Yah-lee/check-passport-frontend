@@ -11,20 +11,23 @@
       <v-textarea
         ref="myTextarea"
         v-model="passport"
+        clearable
         @keydown="extractData"
         @keyup.enter="showDialog"
       ></v-textarea>
-      {{ plusEnter }}
-      <div class="d-flex" style="width: 100px"> 
-        <v-btn class="pink white--text" :loading="loading" @click="onSaveData"
-          >SAVE</v-btn
-        >
-        <v-btn class="pink white--text" @click="onGetData">GET</v-btn>
-        <v-btn class="mx-16 pink white--text" to="/report">report</v-btn>
-        <v-btn class="pink white--text" @click="onClearData">CLEAR</v-btn>
-       <v-text-field label="search">
+      <div class="d-flex">
+        <v-btn class="primary mr-3" :loading="loading" @click="onSaveData">
+          <v-icon left>mdi-content-save-outline</v-icon>
+          SAVE
+        </v-btn>
+        <v-btn outlined color="primary" class="mr-3" to="/report">
+          report
+        </v-btn>
+        <v-btn class="error" @click="onClearData">
+          <v-icon left>mdi-restart</v-icon>
 
-       </v-text-field>
+          CLEAR</v-btn
+        >
       </div>
       <v-row class="mt-10">
         <v-col
@@ -41,23 +44,7 @@
           ></v-text-field>
         </v-col>
       </v-row>
-      <div>
-        {{ items }}
-      </div>
     </v-container>
-    <!-- ____________show dialog_______________ -->
-    <!-- <v-dialog v-model="dialog" max-width="500">
-      <v-card>
-        <v-card-title class="headline">Confirm Save</v-card-title>
-        <v-card-text>
-          Are you sure you want to save the data?
-        </v-card-text>
-        <v-card-actions>
-          <v-btn color="primary" text @click="onSaveData" >Save</v-btn>
-          <v-btn color="primary" text @click="dialog = false">Cancel</v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-dialog> -->
   </div>
 </template>
 <script>
@@ -76,7 +63,17 @@ export default {
   mounted() {
     this.$refs.myTextarea.focus()
   },
-  watch: {},
+  watch: {
+    passport(value) {
+      if (!value) {
+        this.passport = ''
+        this.data = {}
+      }
+      if (!value?.replace(/(^[ \t]*\n)/gm, '')) {
+        this.data = {}
+      }
+    },
+  },
   methods: {
     mrzParseTwoLine(line1, line2) {
       const parseResultInfo = ['']
@@ -288,17 +285,19 @@ export default {
       })
     },
     onClearData() {
-      // Clear the passport data
       this.plusEnter = 0
       this.data = {}
       this.passport = ''
       this.$refs.myTextarea.focus()
     },
     showDialog() {
-      this.plusEnter = this.plusEnter + 1
-      if (this.plusEnter === 4) {
-        // this.dialog = true;
-        this.onSaveData()
+      if (this.passport?.replace(/(^[ \t]*\n)/gm, '')) {
+        this.plusEnter = this.plusEnter + 1
+        if (this.plusEnter === 4) {
+          this.onSaveData()
+        }
+      } else {
+        this.passport = ''
       }
     },
   },

@@ -2,19 +2,28 @@
   <div>
     <v-container>
       <div class="text-center text-h1 my-16">
-        Mode
+        LPB
         <div class="my-16">
-          <v-row>
-            <v-col cols="6">
+          <v-row justify="center">
+            <v-col cols="3">
               <div class="text-center">
-                <v-btn class="" to="/machine" style="width: 380px; height: 200px"
+                <v-btn class="" to="/machine" style="height: 200px" block
                   >machine-readable passport</v-btn
                 >
               </div>
             </v-col>
-            <v-col cols="6">
+            <v-col cols="3">
               <div class="text-center">
-                <v-btn class="" to="/manual" style="width: 380px; height: 200px">manual</v-btn>
+                <v-btn class="" to="/manual" style="height: 200px" block
+                  >manual</v-btn
+                >
+              </div>
+            </v-col>
+            <v-col cols="3">
+              <div class="text-center">
+                <v-btn class="" to="/createUser" style="height: 200px" block
+                  >Create User</v-btn
+                >
               </div>
             </v-col>
           </v-row>
@@ -26,5 +35,4 @@
 
 <script>
 middleware: 'auth'
-
 </script>

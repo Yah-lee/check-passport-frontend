@@ -16,10 +16,11 @@
         </div>
         <div>
           <v-text-field
+            v-model="PASSWORD"
             label="PASSWORD"
             type="password"
             name="password"
-            v-model="PASSWORD"
+            @keydown.enter="login"
           ></v-text-field>
         </div>
 
@@ -28,7 +29,6 @@
             >Sign in</v-btn
           >
         </div>
-        <div class="my-16"><a href="/create">Create an account</a></div>
       </div>
     </div>
   </div>
@@ -53,7 +53,7 @@ export default {
           password: this.PASSWORD,
         })
         if (response.data && response.data.id) {
-           this.$cookies.set('token', response.data.username)
+          this.$cookies.set('token', response.data.username)
           this.$router.push('/mode')
         } else {
           console.log('Login failed: Invalid username or password')

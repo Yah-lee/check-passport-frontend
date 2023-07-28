@@ -1,0 +1,51 @@
+[
+  {
+    "name": "createUser",
+    "path": "/createUser",
+    "component": "/Users/yahsandee/development/passport/check-passport-frontend/pages/createUser.vue",
+    "chunkName": "pages/createUser",
+    "_name": "_61aad42f"
+  },
+  {
+    "name": "machine",
+    "path": "/machine",
+    "component": "/Users/yahsandee/development/passport/check-passport-frontend/pages/machine.vue",
+    "chunkName": "pages/machine",
+    "_name": "_491d5f2f"
+  },
+  {
+    "name": "manual",
+    "path": "/manual",
+    "component": "/Users/yahsandee/development/passport/check-passport-frontend/pages/manual.vue",
+    "chunkName": "pages/manual",
+    "_name": "_f38cace4"
+  },
+  {
+    "name": "mode",
+    "path": "/mode",
+    "component": "/Users/yahsandee/development/passport/check-passport-frontend/pages/mode.vue",
+    "chunkName": "pages/mode",
+    "_name": "_b062de2a"
+  },
+  {
+    "name": "report",
+    "path": "/report",
+    "component": "/Users/yahsandee/development/passport/check-passport-frontend/pages/report.vue",
+    "chunkName": "pages/report",
+    "_name": "_4c8aaffc"
+  },
+  {
+    "name": "user",
+    "path": "/user",
+    "component": "/Users/yahsandee/development/passport/check-passport-frontend/pages/user.vue",
+    "chunkName": "pages/user",
+    "_name": "_864621da"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/yahsandee/development/passport/check-passport-frontend/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_c5fa8b8c"
+  }
+]

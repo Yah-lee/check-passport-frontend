@@ -2,11 +2,14 @@
   <div>
     <v-container>
       <div>
-        <a href="/mode"
-          ><v-icon size="100" style="margin-left: 100%"
-            >mdi-arrow-left-thick</v-icon
-          ></a
+        <v-btn
+          depressed
+          fab
+          style="position: absolute; right: 10px; top: 10%"
+          @click="$router.go(-1)"
         >
+          <v-icon>mdi-arrow-left</v-icon>
+        </v-btn>
       </div>
       <v-textarea
         ref="myTextarea"

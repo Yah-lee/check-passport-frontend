@@ -1,0 +1,17 @@
+{
+  "NuxtLogo": {
+    "description": "Auto imported from components/NuxtLogo.vue"
+  },
+  "Scanner": {
+    "description": "Auto imported from components/Scanner.vue"
+  },
+  "Tutorial": {
+    "description": "Auto imported from components/Tutorial.vue"
+  },
+  "VuetifyLogo": {
+    "description": "Auto imported from components/VuetifyLogo.vue"
+  },
+  "Logout": {
+    "description": "Auto imported from components/logout.vue"
+  }
+}

@@ -4,13 +4,14 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _61aad42f = () => interopDefault(import('../pages/createUser.vue' /* webpackChunkName: "pages/createUser" */))
-const _491d5f2f = () => interopDefault(import('../pages/machine.vue' /* webpackChunkName: "pages/machine" */))
-const _f38cace4 = () => interopDefault(import('../pages/manual.vue' /* webpackChunkName: "pages/manual" */))
-const _b062de2a = () => interopDefault(import('../pages/mode.vue' /* webpackChunkName: "pages/mode" */))
-const _4c8aaffc = () => interopDefault(import('../pages/report.vue' /* webpackChunkName: "pages/report" */))
-const _864621da = () => interopDefault(import('../pages/user.vue' /* webpackChunkName: "pages/user" */))
-const _c5fa8b8c = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _9f0d4dea = () => interopDefault(import('../pages/createUser.vue' /* webpackChunkName: "pages/createUser" */))
+const _5c47305a = () => interopDefault(import('../pages/machine.vue' /* webpackChunkName: "pages/machine" */))
+const _da36072c = () => interopDefault(import('../pages/manual.vue' /* webpackChunkName: "pages/manual" */))
+const _7cae2a72 = () => interopDefault(import('../pages/mode.vue' /* webpackChunkName: "pages/mode" */))
+const _593602d8 = () => interopDefault(import('../pages/report.vue' /* webpackChunkName: "pages/report" */))
+const _bb823394 = () => interopDefault(import('../pages/test.vue' /* webpackChunkName: "pages/test" */))
+const _52916e22 = () => interopDefault(import('../pages/user.vue' /* webpackChunkName: "pages/user" */))
+const _8318c844 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -25,31 +26,35 @@ export const routerOptions = {
 
   routes: [{
     path: "/createUser",
-    component: _61aad42f,
+    component: _9f0d4dea,
     name: "createUser"
   }, {
     path: "/machine",
-    component: _491d5f2f,
+    component: _5c47305a,
     name: "machine"
   }, {
     path: "/manual",
-    component: _f38cace4,
+    component: _da36072c,
     name: "manual"
   }, {
     path: "/mode",
-    component: _b062de2a,
+    component: _7cae2a72,
     name: "mode"
   }, {
     path: "/report",
-    component: _4c8aaffc,
+    component: _593602d8,
     name: "report"
   }, {
+    path: "/test",
+    component: _bb823394,
+    name: "test"
+  }, {
     path: "/user",
-    component: _864621da,
+    component: _52916e22,
     name: "user"
   }, {
     path: "/",
-    component: _c5fa8b8c,
+    component: _8318c844,
     name: "index"
   }],
 

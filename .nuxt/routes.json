@@ -2,50 +2,57 @@
   {
     "name": "createUser",
     "path": "/createUser",
-    "component": "/Users/yahsandee/development/passport/check-passport-frontend/pages/createUser.vue",
+    "component": "/Users/yah/development/passport/check-passport-frontend/pages/createUser.vue",
     "chunkName": "pages/createUser",
-    "_name": "_61aad42f"
+    "_name": "_9f0d4dea"
   },
   {
     "name": "machine",
     "path": "/machine",
-    "component": "/Users/yahsandee/development/passport/check-passport-frontend/pages/machine.vue",
+    "component": "/Users/yah/development/passport/check-passport-frontend/pages/machine.vue",
     "chunkName": "pages/machine",
-    "_name": "_491d5f2f"
+    "_name": "_5c47305a"
   },
   {
     "name": "manual",
     "path": "/manual",
-    "component": "/Users/yahsandee/development/passport/check-passport-frontend/pages/manual.vue",
+    "component": "/Users/yah/development/passport/check-passport-frontend/pages/manual.vue",
     "chunkName": "pages/manual",
-    "_name": "_f38cace4"
+    "_name": "_da36072c"
   },
   {
     "name": "mode",
     "path": "/mode",
-    "component": "/Users/yahsandee/development/passport/check-passport-frontend/pages/mode.vue",
+    "component": "/Users/yah/development/passport/check-passport-frontend/pages/mode.vue",
     "chunkName": "pages/mode",
-    "_name": "_b062de2a"
+    "_name": "_7cae2a72"
   },
   {
     "name": "report",
     "path": "/report",
-    "component": "/Users/yahsandee/development/passport/check-passport-frontend/pages/report.vue",
+    "component": "/Users/yah/development/passport/check-passport-frontend/pages/report.vue",
     "chunkName": "pages/report",
-    "_name": "_4c8aaffc"
+    "_name": "_593602d8"
+  },
+  {
+    "name": "test",
+    "path": "/test",
+    "component": "/Users/yah/development/passport/check-passport-frontend/pages/test.vue",
+    "chunkName": "pages/test",
+    "_name": "_bb823394"
   },
   {
     "name": "user",
     "path": "/user",
-    "component": "/Users/yahsandee/development/passport/check-passport-frontend/pages/user.vue",
+    "component": "/Users/yah/development/passport/check-passport-frontend/pages/user.vue",
     "chunkName": "pages/user",
-    "_name": "_864621da"
+    "_name": "_52916e22"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/yahsandee/development/passport/check-passport-frontend/pages/index.vue",
+    "component": "/Users/yah/development/passport/check-passport-frontend/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_c5fa8b8c"
+    "_name": "_8318c844"
   }
 ]

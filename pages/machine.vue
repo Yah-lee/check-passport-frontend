@@ -2,22 +2,12 @@
   <div>
     <v-container>
       <div>
-        <v-btn
-          depressed
-          fab
-          style="position: absolute; right: 10px; top: 10%"
-          @click="$router.go(-1)"
-        >
+        <v-btn depressed fab style="position: absolute; right: 10px; top: 10%" @click="$router.go(-1)">
           <v-icon>mdi-arrow-left</v-icon>
         </v-btn>
       </div>
-      <v-textarea
-        ref="myTextarea"
-        v-model="passport"
-        clearable
-        @keydown="extractData"
-        @keyup.enter="showDialog"
-      ></v-textarea>
+      <v-textarea ref="myTextarea" v-model="passport" clearable @keydown="extractData"
+        @keyup.enter="showDialog"></v-textarea>
       <div class="d-flex">
         <v-btn class="primary mr-3" :loading="loading" @click="onSaveData">
           <v-icon left>mdi-content-save-outline</v-icon>
@@ -29,22 +19,11 @@
         <v-btn class="error" @click="onClearData">
           <v-icon left>mdi-restart</v-icon>
 
-          CLEAR</v-btn
-        >
+          CLEAR</v-btn>
       </div>
       <v-row class="mt-10">
-        <v-col
-          v-for="(item, index) in Object.keys(data)"
-          :key="index"
-          cols="12"
-          md="3"
-          sm="6"
-        >
-          <v-text-field
-            v-model="data[item]"
-            :label="item"
-            :value="data[item]"
-          ></v-text-field>
+        <v-col v-for="(item, index) in Object.keys(data)" :key="index" cols="12" md="3" sm="6">
+          <v-text-field v-model="data[item]" :label="item" :value="data[item]"></v-text-field>
         </v-col>
       </v-row>
     </v-container>
